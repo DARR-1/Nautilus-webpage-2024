@@ -5,16 +5,30 @@ html, body {
     height: 100%;
 }
 
-.fixed-images{
-    position: fixed;
+.image-section-div::after{
+    content: "";
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
     width: 100vw;
+    height: 100vh;
+    position: absolute;
+    clip-path: inset(0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .image-section-div{
+    width:100vw;
+    height: 80vh;
+    overflow: hidden;
     position: relative;
-    background-color: aqua;
-    z-index: 4;
-
+    background-color: rgba(0, 255, 42, 0.26);
+    z-index: 5;
 }
 
 
@@ -42,26 +56,26 @@ html, body {
     left: 0;
     margin: 0;
     padding: 0;
-    position:fixed;
+    background-attachment: fixed;
     background-image: url('/Assets/images/regional-monterrey.jpg');
     display: flex;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    position: absolute;
+    clip-path: inset(0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    background-color: aqua;
 }
 
 #Banner::before{
     top: 0;
     left: 0;
     content: "";
-    position: fixed;
+    position: absolute;
     background-color: rgba(22, 24, 8, 0.377);
     height: 100vh;
     width: 100vw;
@@ -78,17 +92,24 @@ html, body {
 #Section_1  {
     position: relative;
     width: 100vw;
-    display: flex;
-    align-self: end;
+    display: inline-block;
+    align-self: center;
 }
 
 #Section_1 .content{
     position: relative;
     background-color: rgb(248, 248, 248);
+    z-index: 4;
+}
+
+#Section_1 .image-section-div::after{
+    background-image: url('/Assets/images/ingenieria.jpg');
     z-index: 6;
+    
 }
 
 #Section_1  .fixed-images{
+    top: 0;
     z-index: 5;
     width: 100vw;
 }
