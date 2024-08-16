@@ -39,7 +39,7 @@ html, body {
 
 .section-text {
     height: 20vh;
-    width:50vw;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +49,9 @@ html, body {
     display: inline-block;
     font-size: xx-small;
     font-size: 2vh;
+    line-height: 3vh;
+    margin-right: 10vh;
+    inline-size: 40vh;
 }
 
 
@@ -60,14 +63,14 @@ html, body {
 }
 
 .title h3{
-    font-size: small;
+    font-size: 7vh;
     font-weight: normal;
     margin-bottom: 0;
 }
 
 .title p{
-    margin-top: 1vw;
-    font-size: 1vw;
+    margin-top: 1vh;
+    font-size: 2vh;
 }
 
 
