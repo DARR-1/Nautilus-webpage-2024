@@ -4,6 +4,7 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: black;
+    overflow-x: hidden;
 }
 
 .image-section-div::after{
@@ -29,6 +30,44 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 4;
+}
+
+.content{
+    font-family: 'Segoe UI';
+}
+
+
+.section-text {
+    height: 20vh;
+    width:50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-text p{
+    display: inline-block;
+    font-size: xx-small;
+    font-size: 2vh;
+}
+
+
+.title {
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    inline-size: 20vw;
+}
+
+.title h3{
+    font-size: small;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.title p{
+    margin-top: 1vw;
+    font-size: 1vw;
 }
 
 
@@ -76,7 +115,7 @@ html, body {
     left: 0;
     content: "";
     position: absolute;
-    background-color: rgba(22, 24, 8, 0.377);
+    background-color:  rgba(49, 54, 56, 0.7);
     height: 100vh;
     width: 100vw;
     z-index: 2;
@@ -98,14 +137,30 @@ html, body {
 
 #Section_1 .content{
     bottom: 0vh;
-    height: 25vh;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(49, 54, 56, 0.9);
     z-index: 5;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-#Section_1 .content p{
+#Section_1 .content p, h3{
     color: white;
+    
+}
+
+#Section_1 .content::before{
+    content: "";
+    top: 0;
+    position: absolute;
+    height: .4vw;
+    width: 100vw;
+    background-color: yellow;
 }
 
 #Section_1 .image-section-div::after{
@@ -119,3 +174,4 @@ html, body {
     z-index: 4;
     width: 100vw;
 }
+
