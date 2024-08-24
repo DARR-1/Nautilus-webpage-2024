@@ -13,6 +13,9 @@ h1{
 }
 
 /*Blogs*/
+#Blogs{
+    display: flex;
+}
 #Blogs p, h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -443,10 +446,50 @@ h1{
     z-index: 3;
 }
 
-#Section-1 .fixed-section::after{
-    background-image: url('/Assets/images/ingenieria.jpg');
+/*Patrocinios*/
+#Alianzas{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);    
+    position: relative;
 }
 
-#Blogs{
+#Alianzas #content{
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: rgb(46, 46, 46);  
+}
+
+#Alianzas #content h2{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Alianzas #content #logos{
+    width: 100%;
+    max-width: 900px; /* Aumenta el ancho del carrusel para mostrar 3 imágenes */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: calc(25% - 2%); /* Ajusta el ancho para que quepan bien con el margen */
+    flex-shrink: 0;
+    margin-right: 2%; /* Espacio entre las imágenes */
+}
+
+.slides img:last-child {
+    margin-right: 0; /* El último elemento no necesita margen a la derecha */
 }
