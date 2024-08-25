@@ -455,7 +455,7 @@ h1{
     justify-content: space-between;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100vw;
-    height: 10vh;
+    height: 4.5vw;
     z-index: 5;
 }
 
@@ -463,7 +463,7 @@ h1{
     width: 20vw;
     height: min-content;
     margin: 1vw;
-    margin-top: 3vh;
+    margin-top: 1.5vw;
 }
 
 #Banner #menu-bar ul{
@@ -479,6 +479,7 @@ h1{
 #Banner #menu-bar a{
     text-decoration: none;
     color: rgb(250, 249, 241);
+    font-size: medium;
 }
 
 /*Quienes Somos*/
@@ -555,7 +556,7 @@ h1{
 #quienes-somos #unirse{
     display: flex;
     width: 15vw;
-    height: 10vh;
+    height: 4.5vw;
     border-radius: 20px;
     border: .1vh solid rgb(250, 249, 241);
     align-items: center;
@@ -628,7 +629,7 @@ h1{
 footer{
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 26vw;
     color: #e6d40d;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-content: center;
@@ -683,7 +684,7 @@ footer #right-container{
     position: relative;
     display: flex;
     width: 50vw;
-    height: 40vh;
+    height: 24  vw;
     justify-content: center;
     align-items: center;
 
@@ -711,7 +712,7 @@ footer #right-container img{
 
     max-height: 11vw; /* Limita la altura máxima de la imagen */
     width: auto; /* Mantiene la proporción de la imagen */
-    margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen de la lista */
+    
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
     object-fit: contain;
