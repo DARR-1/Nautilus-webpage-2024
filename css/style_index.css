@@ -659,7 +659,7 @@ footer #left-container{
 }
 
 footer #right-container img{
-    max-height: 27vh; /* Limita la altura máxima de la imagen */
+    max-height: 15vw; /* Limita la altura máxima de la imagen */
     width: auto; /* Mantiene la proporción de la imagen */
     margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen de la lista */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
@@ -669,7 +669,7 @@ footer #right-container img{
 
 footer #FIRST{
     position: absolute;
-    height: 25vh;
+    height: 16vw;
     width: auto;
     top: 20%;
 }
