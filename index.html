@@ -9,6 +9,18 @@
         <h1>Nautilus 4010</h1>
         <!-- Banner -->
         <section id="Banner">
+            <div id="menu-bar">
+                <img src="Assets/images/LogoHeader.png">
+                <ul>
+                    <li><a href="">¿Quienes Somos?</a></li>
+                    <li><a href="">¿Cómo Formar Parte?</a></li>
+                    <li><a href="">Impacto Social</a></li>
+                    <li><a href="">Tienda</a></li>
+                    <li><a href="">Recursos</a></li>
+                    <li><a href="">Historia</a></li>
+                    <li><a href="">Galeria</a></li>
+                </ul>
+            </div>
             <div>
                 <img src="Assets/images/logo-Nautilus-amarillo.png" id="Logo-Grande">
                 <a href=""><img src=""></a>
@@ -18,7 +30,7 @@
 
         <!--Blogs-->
         <section id="Blogs">
-            <div id="fixed-section1">
+            <div id="fixed-section1" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <div id="fixed-section-content1">
                     <h3>Ingeniería</h3>
                     <p>Hola soy ingeniería no tengo ni la más mínima idea de 
@@ -27,7 +39,7 @@
                     </p>
                 </div>
             </div>
-            <div id="fixed-section2">
+            <div id="fixed-section2" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <div id="fixed-section-content2">
                     <h3>Comunicación</h3>
                     <p>Hola soy Comunicación no tengo ni la más mínima idea de 
@@ -36,7 +48,7 @@
                     </p>
                 </div>
             </div>
-            <div id="fixed-section3">
+            <div id="fixed-section3" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <div id="fixed-section-content3">
                     <h3>Negocios</h3>
                     <p>Hola soy negocios no tengo ni la más mínima idea de 
@@ -45,7 +57,7 @@
                     </p>
                 </div>
             </div>
-            <div id="fixed-section4">
+            <div id="fixed-section4" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <div id="fixed-section-content4">
                     <h3>Acciones por México</h3>
                     <p>Hola soy acciones por México no tengo ni la más mínima idea de 
@@ -58,21 +70,21 @@
 
         <!--Quienes Somos-->
         <section id="quienes-somos">
-            <h3>Quienes Somos</h3>
+            <h3>¿Quienes Somos?</h3>
             <p>Nautilus 4010 es el equipo de robótica participante en FRC (FIRST Robotics Competition) del Tecnológico de Monterrey Campus Ciudad de México, que difunde la ciencia y tecnología en su comunidad.</p>
             <ul>
                 <li><div id="mision">
-                    <div id="mision-icon"></div>
+                    <div id="mision-icon"><img src="Assets/images/Iconos/mision.png"></div>
                     <h4>Misión</h4>
                     <p>Educar a jóvenes líderes con el fin de generar un cambio en el mundo,<br> compartiendo y aplicando la ciencia y la tecnología.</p>
                 </div></li>
                 <li><div id="vision">
-                    <div id="vision-icon"></div>
+                    <div id="vision-icon"><img src="Assets/images/Iconos/vision.png"></div>
                     <h4>Visión</h4>
                     <p>Para 2025 seremos el equipo FIRST con mayor impacto, crecimiento y desarrollo de habilidades STEM y responsabilidad social en México. Queremos generar un cambio en nuestra comunidad creando agentes de cambio inspiradores y comprometidos con los ideales y valores del equipo.</p>
                 </div></li>
                 <li><div id="alcance">
-                    <div id="alcance-icon"></div>
+                    <div id="alcance-icon"><img src="Assets/images/Iconos/alcance.png"></div>
                     <h4>Alcance</h4>
                     <p>En años de historia, Nautilus 4010 ha tenido un alcance de 100,000 personas impactando a niños y jóvenes de toda la República Mexicana.</p>
                 </div></li>
@@ -102,6 +114,7 @@
          <!--Pie de página-->
         <footer>
             <div id="footer-container">
+                <div id="line"></div>
                 <img src="Assets/images/FIRST" id="FIRST">
                 <div id="left-container">
                     <ul id="opciones-footer">
@@ -118,13 +131,17 @@
                     <ul id="columna">
                         <li><img src="Assets/images/logo-simple.png" alt=""></li>
                         <li><ul id="redes-sociales">
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Email</a></li>
+                            <li><a href=""><img src="Assets/images/Iconos/facebook.png"></a></li>
+                            <li><a href=""><img src="Assets/images/Iconos/email.png"></a></li>
+                            <li><a href=""><img src="Assets/images/Iconos/github.png"></a></li>
+                            <li><a href=""><img src="Assets/images/Iconos/instagram.png"></a></li>
+                            <li><a href=""><img src="Assets/images/Iconos/youtube.png" id="youtube"></a></li>
                         </ul></li>
                     </ul>
                 </div>
+                
             </div>
+            <div id="iconos"> Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a></div>
         </footer>
 
         <script src="js/script_index.js"></script>
