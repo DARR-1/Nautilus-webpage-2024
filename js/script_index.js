@@ -1,14 +1,20 @@
-const slides = document.querySelector('#logos');
-const images = document.querySelectorAll('#logos img');
+var clicked = false;
 
-let currentIndex = 0;
-const totalImages = images.length;
-const imagesToShow = 4; // Número de imágenes a mostrar a la vez
-
-function showNextImage() {
-    currentIndex = (currentIndex + imagesToShow) % totalImages;
-    slides.style.transform = `translateX(${-currentIndex * (100 / imagesToShow)}%)`;
-    console.log("cambiando imagen")
-}
-
-setInterval(showNextImage, 3000); // Cambia cada 3 segundos
+document.getElementById("menu-button").onclick = function () {
+    if (!clicked) {
+        document.getElementById("menu-button").style.transform = "translate(-50vw, 0) rotate(0)";
+        document.getElementById("menu-button").style.backgroundImage = "url('/Assets/images/Iconos/cerrar.png')";
+        clicked = true;
+        console.log("clickearon el menu");
+        console.log(clicked);
+        document.body.style.overflowY = 'hidden';
+    } else {
+        document.getElementById("menu-button").style.transform = "translate(0, 0) rotate(0)";
+        document.getElementById("menu-button").style.backgroundImage = "url('/Assets/images/Iconos/menu.png')";
+        clicked = false;
+        console.log("clickearon el menu pero con false");
+        console.log(clicked);
+        document.body.style.position = 'relative'
+        document.body.style.overflowY = 'auto';
+    }
+};
