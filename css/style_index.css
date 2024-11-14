@@ -492,6 +492,7 @@ h1{
 #Banner #menu-bar #menu-button {
     color: transparent;
     position: fixed;
+    z-index: -100;
 }
 
 #Banner #menu-bar #menu-button #menu a{
@@ -1213,6 +1214,7 @@ footer #iconos{
     background-size: cover;
     cursor: pointer;
     transition: transform 0.5s ease;
+    z-index: 5;
 }
 
 #Banner #menu-bar #menu-button #menu{
