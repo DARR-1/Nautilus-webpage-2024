@@ -47,7 +47,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/ingenieria.jpg');
+    background-image: url('../Assets/images/ingenieria.jpg');
     z-index: 1;
     background-position: -20%, 50%;
 }
@@ -139,7 +139,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/comunicacion.jpg');
+    background-image: url('../Assets/images/comunicacion.jpg');
     z-index: 1;
     background-position: 31% 50%;
     background-size: contain;
@@ -233,7 +233,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/negocios.jpg');
+    background-image: url('../Assets/images/negocios.jpg');
     z-index: 1;
     background-position: 60% 50%;
 }
@@ -326,7 +326,7 @@ h1{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/axm.jpg');
+    background-image: url('../Assets/images/axm.jpg');
     z-index: 1;
     background-position: 200% 50%;
 }
@@ -847,7 +847,7 @@ footer #iconos{
         background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
-        background-image: url('/Assets/images/ingenieria.jpg');
+        background-image: url('../Assets/images/ingenieria.jpg');
         z-index: 1;
     }
 
@@ -939,7 +939,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/comunicacion.jpg');
+    background-image: url('../Assets/images/comunicacion.jpg');
     z-index: 1;
 }
 
@@ -1031,7 +1031,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/negocios.jpg');
+    background-image: url('../Assets/images/negocios.jpg');
     z-index: 1;
 }
 
@@ -1123,7 +1123,7 @@ footer #iconos{
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
-    background-image: url('/Assets/images/axm.jpg');
+    background-image: url('../Assets/images/axm.jpg');
     z-index: 1;
 }
 
@@ -1200,7 +1200,7 @@ footer #iconos{
 
 #Banner #menu-bar #menu-button{
     content: "";
-    background-image: url('Assets/images/Iconos/menu.png');
+    background-image: url('../Assets/images/Iconos/menu.png');
     position: absolute;
     top: 0;
     right: 0;
