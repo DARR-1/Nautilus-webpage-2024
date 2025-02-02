@@ -1200,7 +1200,7 @@ footer #iconos{
 
 #Banner #menu-bar #menu-button{
     content: "";
-    background-image: url('/Assets/images/Iconos/menu.png');
+    background-image: url('Assets/images/Iconos/menu.png');
     position: absolute;
     top: 0;
     right: 0;
