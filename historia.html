@@ -1,43 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="Assets/images/logo-simple.png">
-    <link rel="stylesheet" href="css/style_historia.css">
-    <title>Historia</title>
-</head>
-<body>
-    <a href="index.html" id="back-button"><img src="Assets/images/Iconos/flecha.png" alt=""></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Assets/images/logo-simple.png">
+        <link rel="stylesheet" href="css/style_historia.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <title>Historia</title>
+    </head>
+    <body>
+        <a href="index.html" id="back-button"><img src="Assets/images/Iconos/flecha.png" alt=""></a>
 
-    <div id="years">
-        <div id="pointer"></div>
-        <ul>
-            <li>2012</li>
-            <li>2013</li>
-            <li>2014</li>
-            <li>2015</li>
-            <li>2016</li>
-            <li>2017</li>
-            <li>2018</li>
-            <li>2019</li>
-            <li>2020</li>
-            <li>2021</li>
-            <li>2022</li>
-            <li>2023</li>
-            <li>2024</li>
-        </ul>
-        <div id="creditos"> Iconos diseñados por <a href="https://www.flaticon.es/autores/kirill-kazachek" title="Kirill Kazachek"> Kirill Kazachek </a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a></div>
-    </div>
-    <div class="container" id="2012">
-        <img src="Assets/images/fondos-historia/test-3.webp" alt="">
-        <h4>2012</h4>
-        <h3>Título chido</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a href=""></a>
-    </div>
-
-</body>
+        <div id="years">
+            <div id="pointer"></div>
+            <ul>
+                <li onclick="scrollToSection(2012)" id="2012-button">2012</li>
+                <li onclick="scrollToSection(2013)" id="2013-button">2013</li>
+                <li onclick="scrollToSection(2014)" id="2014-button">2014</li>
+                <li onclick="scrollToSection(2015)" id="2015-button">2015</li>
+                <li onclick="scrollToSection(2016)" id="2016-button">2016</li>
+                <li onclick="scrollToSection(2017)" id="2017-button">2017</li>
+                <li onclick="scrollToSection(2018)" id="2018-button">2018</li>
+                <li onclick="scrollToSection(2019)" id="2019-button">2019</li>
+                <li onclick="scrollToSection(2020)" id="2020-button">2020</li>
+                <li onclick="scrollToSection(2021)" id="2021-button">2021</li>
+                <li onclick="scrollToSection(2022)" id="2022-button">2022</li>
+                <li onclick="scrollToSection(2023)" id="2023-button">2023</li>
+                <li onclick="scrollToSection(2024)" id="2024-button">2024</li>
+            </ul>
+            <div id="creditos"> Iconos diseñados por <a href="https://www.flaticon.es/autores/kirill-kazachek" title="Kirill Kazachek"> Kirill Kazachek </a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a></div>
+        </div>
+        <div class="containers" id="containers">
+            <div class="container" id="2012">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2012</h4>
+                <h3>Título chido</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2013">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2013</h4>
+                <h3>Título chido 2.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2014">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2014</h4>
+                <h3>Título chido 3.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2015">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2015</h4>
+                <h3>Título chido 4.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2016">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2016</h4>
+                <h3>Título chido 5.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2017">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2017</h4>
+                <h3>Título chido 6.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2018">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2018</h4>
+                <h3>Título chido 7.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2019">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2019</h4>
+                <h3>Título chido 8.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2020">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2020</h4>
+                <h3>Título chido 9.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2021">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2021</h4>
+                <h3>Título chido 10.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2022">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2022</h4>
+                <h3>Título chido 11.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2023">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2023</h4>
+                <h3>Título chido 12.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+            <div class="container" id="2024">
+                <img src="Assets/images/fondos-historia/test-3.webp" alt="">
+                <h4>2024</h4>
+                <h3>Título chido 13.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""></a>
+            </div>
+        </div>
+        <script src="js/historia_script.js"></script>
+    </body>
 </html>

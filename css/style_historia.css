@@ -7,43 +7,57 @@ html, body {
     overflow: hidden;
 }
 
+.containers {
+    display: flexbox;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0;
+}
+
 .container {
+    position: relative;
+    display: inline-block;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: right;
+    width: 100vw;
 }
 
 .container img{
     height: 100vh;
     width: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
 .container h4{
     position: absolute;
     top: 14vh;
     right: 34vw;
-    font-size: xx-large;
+    font-size: 3.5vh;
     color: yellow;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 100;
+    z-index: 2;
 
 }
 
 .container h3{
     position: absolute;
-    top: 17vh;
+    top: 20vh;
     right: 34vw;
-    font-size: 4vw;
+    font-size: 4vh;
+    z-index: 2;
 
 }
 
 .container p{
     position: absolute;
-    top: 35vh;
+    top: 30vh;
     right: 34vw;
     max-width: 30vw;
-
+    font-size: 1.7vh;
+    z-index: 2;
 }
 
 #back-button img{
@@ -52,6 +66,7 @@ html, body {
     left: 1vw;
     width: 2.3vw;
     height: 2.3vw;
+    z-index: 0;
 }
 
 #years {
@@ -62,19 +77,19 @@ html, body {
     width: 30vw;
     align-content: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
 }
 
 #years::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: -17.5vw;
     right: -55vw;
     background-color: rgba(0, 0, 0, 0.438);
     height: 100vw;
     width: 100vw;
-    border-radius: 100%;
-    box-shadow: 0px 0 170px 200px rgba(0, 0, 0, 0.438);
+    border-radius: 20%;
+    box-shadow: 0px 0 170px 200px rgba(0, 0, 0, .438);
+    z-index: 1;
 }
 
 #years::before {
@@ -84,7 +99,7 @@ html, body {
     width: .1vw;
     height: 100vh;
     background-color: rgb(202, 186, 186);
-    z-index: 1;
+    z-index: 2;
 }
 
 #years ul{
@@ -96,9 +111,10 @@ html, body {
     color: rgba(255, 255, 0, 0.658);
     list-style: none;
     margin-bottom: 2.5vh;
-    font-size: x-large;
-    z-index: 1;
+    font-size: 2.5vh;
+    z-index: 2;
     cursor: pointer;
+    transition: font-size 0.5s ease, color 0.5s ease;
 }
 
 #years li:hover{
@@ -107,13 +123,14 @@ html, body {
 
 #years #pointer {
     position: absolute;
-    left: -.4vw;
-    top: 6vh;
+    left: -.19vw;
+    top: 16.5vh;
     background-color: yellow;
-    width: 1vw;
-    height: 1vw;
+    width: .5vw;
+    height: .5vw;
     border-radius: 100%;
     z-index: 2;
+    transition: top 0.5s ease;
 }
 
 #creditos {
