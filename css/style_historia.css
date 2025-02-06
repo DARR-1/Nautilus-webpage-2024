@@ -23,14 +23,14 @@ html, body {
     width: 100vw;
 }
 
-.container img{
+.container img {
     height: 100vh;
     width: 100%;
     object-fit: cover;
     z-index: 0;
 }
 
-.container h4{
+.container h4 {
     position: absolute;
     top: 14vh;
     right: 34vw;
@@ -42,7 +42,7 @@ html, body {
 
 }
 
-.container h3{
+.container h3 {
     position: absolute;
     top: 20vh;
     right: 34vw;
@@ -51,7 +51,7 @@ html, body {
 
 }
 
-.container p{
+.container p {
     position: absolute;
     top: 30vh;
     right: 34vw;
@@ -60,13 +60,33 @@ html, body {
     z-index: 2;
 }
 
+.container a {
+    position: absolute;
+    top: 43vh;
+    right: 36.6vw;
+    font-size: 1.7vh;
+    color: transparent;
+    z-index: 2;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container a img {
+    position: absolute;
+    width: 2vw;
+    height: auto;
+    top: 0vh;
+    left: .5vw;
+    z-index: 2;
+}
+
 #back-button img{
     position: absolute;
     top: 2vh;
     left: 1vw;
-    width: 2.3vw;
-    height: 2.3vw;
-    z-index: 0;
+    width: 1.5vw;
+    height: 1.5vw;
+    z-index: 2;
 }
 
 #years {
@@ -145,4 +165,80 @@ html, body {
 #creditos a{
     text-decoration: none;
     color: inherit;
+}
+
+/*Responsive*/
+
+@media (max-aspect-ratio: 17/16){
+
+    .container h4 {
+    position: absolute;
+    top: 17vh;
+
+
+}
+
+.container h3 {
+    position: absolute;
+    top: 23vh;
+    left: 13vw;
+    right: 41.5vw;
+    font-size: 3vh;
+    z-index: 2;
+    text-align: center;
+
+}
+
+.container p {
+    text-align: center;
+    max-width: 60vw;
+    font-size: 1.5vh;
+}
+
+.container a {
+    position: relative;
+    top: -52.5vh;
+    right: 65.5vw;
+    font-size: 1.7vh;
+    color: transparent;
+    z-index: 2;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container a img {
+    position: absolute;
+    width: 2.5vh;
+    height: auto;
+    top: 0vh;
+    left: .5vw;
+    z-index: 2;
+}
+
+    #years ul{
+        position: relative;
+        right: 5.2vw;
+        text-align: center;
+    }
+
+    #back-button img{
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+        width: 3vh;
+        height: 3vh;
+        z-index: 2;
+    }
+
+    #years #pointer {
+        position: absolute;
+        left: -.9vw;
+        top: 16.5vh;
+        background-color: yellow;
+        width: 1vh;
+        height: 1vh;
+        border-radius: 100%;
+        z-index: 2;
+        transition: top 0.5s ease;
+    }
 }
