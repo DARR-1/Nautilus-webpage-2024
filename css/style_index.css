@@ -1190,13 +1190,7 @@ footer #iconos{
     transition: all 0.3s ease;
 }
 
-#Banner #menu-bar a{
-    color: transparent;
-    position: absolute;
-    x: -1000;
-    y: -1000;
-    z-index: -1;
-}
+
 
 #Banner #menu-bar #menu-button{
     content: "";
@@ -1239,6 +1233,11 @@ footer #iconos{
 #Banner #menu-bar #menu-button #menu li{
     margin-bottom: 2.5vh;
     margin-left: 1vw;
+    color: aliceblue;
+}
+
+#Banner #menu-bar #menu-button #menu a{
+    color:aliceblue;
 }
 
 #Banner #menu-bar #menu-button #menu #location{
@@ -1250,6 +1249,26 @@ footer #iconos{
 #Banner #menu-bar #menu-button #menu a{
     color: rgb(250, 249, 241);
     font-size: x-large;
+}
+
+#Banner #menu-bar #menu-bar-content a{
+    color: transparent;
+    position: absolute;
+    x: -1000;
+    y: -1000;
+}
+
+#Banner #menu-bar #menu-bar-content{
+    position: absolute;
+    top: -1000;
+    left: 0;
+}
+
+#Banner #menu-bar img {
+    width: 17vh;
+    height: min-content;
+    margin: 1vw;
+    margin-top: 1.5vw;
 }
 
 }
