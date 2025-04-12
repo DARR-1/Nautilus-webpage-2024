@@ -448,7 +448,7 @@ h1{
 
 #Banner #Logo-Grande{
     position: relative;
-    width: 45vh;
+    width: 20vh;
     z-index: 3;
 }
 
@@ -1192,10 +1192,9 @@ footer #iconos{
 
 #Banner #menu-bar a{
     color: transparent;
-}
-
-#Banner #menu-bar img{
-    width: 0;
+    position: absolute;
+    x: -1000;
+    y: -1000;
 }
 
 #Banner #menu-bar #menu-button{
