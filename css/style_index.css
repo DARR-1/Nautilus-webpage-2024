@@ -1195,6 +1195,7 @@ footer #iconos{
     position: absolute;
     x: -1000;
     y: -1000;
+    z-index: -1;
 }
 
 #Banner #menu-bar #menu-button{
