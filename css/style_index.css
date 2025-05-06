@@ -489,6 +489,10 @@ h1{
     align-self: right;
 }
 
+#Banner #menu-bar a:hover{
+    color: #e6d40d;
+}
+
 #Banner #menu-bar #menu-button {
     color: transparent;
     position: fixed;
